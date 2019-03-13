@@ -12,6 +12,8 @@
 
     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="first.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="loading-bar.css" />
+    <script type="text/javascript" src="loading-bar.js"></script>
 
 </head>
 
@@ -20,8 +22,8 @@
         <a href="#Info">Info</a>
         <a href="#Introduction">Introduction</a>
         <a href="#Experience">Experience</a>
-        <a href="#Education">Skills</a>
-        <a href="#Skills">Projects</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Interests">Interests</a>
         <a href="#Contact">Contact</a>
     </div>
     <div class="Container">
@@ -30,13 +32,14 @@
                 <img src="img/pic1.jpg" alt="pic1">
             </div>
             <div class="informations">
-                    <p>Kacper Szymula</p>
-                    <p>Wroclaw Uniwersity of Science and Technology</p>
-                    <p><a href="https://www.facebook.com/kacper.szymula.1" target="_blank">My facebook page</a></p>
-                    <p></p><a href="https://github.com/Kapeo" target="_blank">My github profile</a></p>
-                    <p>mail: kacperszymula@wp.pl</p>
+                <p>Kacper Szymula</p>
+                <p>Wroclaw Uniwersity of Science and Technology</p>
+                <p><a href="https://www.facebook.com/kacper.szymula.1" target="_blank">My facebook page</a></p>
+                <p></p><a href="https://github.com/Kapeo" target="_blank">My github profile</a></p>
+                <p>mail: kacperszymula@wp.pl</p>
             </div>
         </div>
+        <h3 id="Introduction">ABOUT ME</h3>
         <div class="Introduction" id="Introduction">
             <p>Hello there! My name is Kacper Szymula and this is my information page.
                 This page was established due to my participation in Web development
@@ -44,19 +47,62 @@
                 interesting and maybe we will be able to cooperate in the future!
             </p>
         </div>
-        <div class="Experience" id="Experience">
-            <p>Doświadczenie</p>
+        <h3 id="Experience">EXPERIENCE</h3>
+        <div class="Experience">
+            <div class="job">
+                <p>Python developer <br> Private customer <br> Jul 2017 -- Aug 2018 Malbork</p>
+            </div>
+            <div class="job_description">
+                <p>Cooperation in creating database application, designed for conducting surveys and evaluations.
+                    Project was implemented in Python with usage of Django framework and SQLite database.</p>
+            </div>
+            <div class="job">
+                <p>Intern <br> BILLANDER GROUP <br> Jul 2016 -- Aug 2016 Gdynia</p>
+            </div>
+            <div class="job_description">
+                <p>Learning about and usage of data factories and building them. Knowledge of business intelligence
+                    processes.
+                    Data processing exercises (ETL). Introduction to manager application which supported decision
+                    making.</p>
+            </div>
+            <div class="job">
+                <p>Production Worker <br> TECHNO-SERVICE SA <br> Jul 2014 -- Aug 2014 Gdańsk</p>
+            </div>
+            <div class="job_description">
+                <p>Working at various stages of the production process,
+                    testing printed circuit boards and being a part of shipping department in the factory of printed
+                    circuit boards.</p>
+            </div>
         </div>
-        <div class="Education" id="Education">
-            <p>Edukacja</p>
+        <h3 id="Skills">PROGRAMING SKILLS</h3>
+        <div class="Skills">
+
+            <!--    <div id="java_bar"></div>
+                <script>
+                  var bar1 = new ldBar("#java_bar");
+                  var bar2 = document.getElementById('java_bar').ldBar;
+                  bar1.set(60);
+                </script> -->
+            <!--           <div class="ldBar label" style="width:50%;height:100%" data-value="35" data-preset="circle"></div>
+            <div class="ldBar label" style="width:50%;height:100%" data-value="35" data-preset="circle"></div>
+            <div class="ldBar label" style="width:50%;height:100%" data-value="35" data-preset="circle"></div>
+            <div class="ldBar label" style="width:50%;height:100%" data-value="35" data-preset="circle"></div>
+            <div class="ldBar label" style="width:50%;height:100%" data-value="35" data-preset="circle"></div> -->
         </div>
-        <div class="Skills" id="Skills">
-            <p>Umiejetnosci</p>
+        <h3 id="Interests">Interests</h3>
+        <div class="Interests"> 
+            <div class="volley">
+                <img src="img/volley.jpg">
+            </div>
+            <div class="coding">
+                <img src="img/code.jpg" alt="code">
+            </div>
+            <div class="literature">
+                <img src="img/lit.jpg" alt="lit">
+            </div>
         </div>
-        <div class="Projects" id="Skills">
-            <p>Projekty</p>
-        </div>
-        <div class="Contact" id="Contact">
+        <h3 id="Contact">CONTACT</h3>
+        <div class="Contact">
             <p>Contact</p>
         </div>
     </div>

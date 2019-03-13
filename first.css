@@ -4,11 +4,9 @@
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    /* Set the navbar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
+    opacity: 0.9;
 }
 
 /*Elementy NavBar*/
@@ -27,24 +25,26 @@
 
 
 .Container {
-    display:grid;
+    display: grid;
     background: red;
     margin-top: 46px;
     grid-template-rows: 1fr 1fr 1fr 1fr 2f 1f 2fr 1fr;
 }
 
+h3 {
+    text-align: center;
+}
 .Info {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row - wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
     background: blue;
-    height: 500px;
 }
 
-.Info .photo{
+.Info .photo {
     background: red;
     box-flex: 1;
     box-sizing: border-box;
@@ -56,7 +56,7 @@
 }
 
 
-.Info .photo > img {
+.Info .photo>img {
     padding: 15px;
     border-radius: 50px;
     width: 70%;
@@ -71,43 +71,153 @@
     padding: 10px;
     align-self: center;
     text-align: flex-start;
-    
-    
+
+
 }
 
-.Info .informations p{
+.Info .informations p {
     color: pink;
-    
+    /*tu czcionki do zmienienia*/
 }
 
 
 .Introduction {
     border: 5px solid black;
-    padding: 10px;
+    padding: 3% 20%;
     text-align: center;
     background: purple;
 }
 
+/*Panel doświadczenie*/
 .Experience {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
     background: yellow;
+    padding: 3%;
+    overflow: hidden;
 }
 
-.Education {
-    background: navy;
+
+
+.Experience .job {
+    align-self: center;
+    text-align: end;
+    padding: 10px;
 }
 
+.Experience .job_description {
+    align-self: center;
+    padding: 10px;
+    padding-right: 40%;
+}
+
+/*Panel umiejtnosci*/
 .Skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
     background: orange;
+    height: 400px;
+    justify-items: center;
+    align-items: center;
+    padding: 3% 15%;
+}
+/* 
+.ldBar-label {
+    color: blue;
+    font-family: tahoma;
+    font-size: 1.5em;
+    font-weight: 900
+  }
+
+  
+  .ldBar-label:after {
+    content:4;
+    color: red;
+    margin-left: 5px;
+    font-family: courier new;
+    font-size: 0.7em;
+    font-weight: 200;
+  } */
+
+
+
+
+/*Panel zainteresowan*/
+.Interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+    grid-column-gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
-.Projects {
-    background: green;
+.Interests .volley{
+    box-sizing: border-box;
+    background: blue;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
 }
 
+.Interests .volley> img {
+    padding: 15px;
+    border-radius: 50px;
+    width: 70%;
+    height: 90%;
+
+}
+
+
+.Interests .coding{
+    box-sizing: border-box;
+    background: grey;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.Interests .coding> img {
+    padding: 15px;
+    border-radius: 50px;
+    width: 70%;
+    height: 90%;
+}
+
+
+.Interests .literature{
+    box-sizing: border-box;
+    background: peru;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.Interests .literature> img {
+    padding: 15px;
+    border-radius: 50px;
+    width: 70%;
+    height: 90%;
+}
+
+.Interests p{
+    size: 30px;
+    background: yellow;
+    color: blue;
+    
+}
+
+/*Panel kontaktowy*/
 .Contact {
     background: white;
 }
 
-.Introdution {
-    background: purple;
-}
