@@ -1,12 +1,20 @@
+a {
+    color: black;
+}
+
+p {
+    font-family: Lato, sans-serif;
+    font-style: italic;
+}
+
 /* NavBar */
 .NavBar {
-    background-color: gray;
+    background-color: rgb(52, 51, 53);
     overflow: hidden;
-    background-color: #333;
-    position: fixed;
     top: 0;
     width: 100%;
     opacity: 0.9;
+    font-family: Lato, sans-serif;
 }
 
 /*Elementy NavBar*/
@@ -26,26 +34,27 @@
 
 .Container {
     display: grid;
-    background: red;
-    margin-top: 46px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2f 1f 2fr 1fr;
+    background: rgb(177, 171, 171);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1f 1f;
 }
 
 h3 {
     text-align: center;
+    font-family: Overpass, sans-serif;
 }
+
 .Info {
+    background-image: url("img/pic2.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: row;
     flex-flow: row - wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: blue;
 }
 
 .Info .photo {
-    background: red;
     box-flex: 1;
     box-sizing: border-box;
     padding: 10px;
@@ -56,36 +65,33 @@ h3 {
 }
 
 
-.Info .photo>img {
-    padding: 15px;
+.Info img {
+    border: 2px solid black;
     border-radius: 50px;
     width: 70%;
     height: 90%;
 }
 
 .Info .informations {
-    background: olive;
     width: 35%;
     height: auto;
     box-flex: 2;
     padding: 10px;
     align-self: center;
     text-align: flex-start;
-
-
 }
 
 .Info .informations p {
-    color: pink;
-    /*tu czcionki do zmienienia*/
+    color: black;
+    font-size: 25px;
 }
 
 
 .Introduction {
-    border: 5px solid black;
+    background-image: linear-gradient(rgb(75, 75, 78), rgb(236, 230, 230));
     padding: 3% 20%;
     text-align: center;
-    background: purple;
+    font-size: 25px;
 }
 
 /*Panel doświadczenie*/
@@ -95,79 +101,88 @@ h3 {
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
-    background: yellow;
+    background-image: url("img/pic3.jpg");
+    background-size: cover;
     padding: 3%;
     overflow: hidden;
 }
 
 
-
-.Experience .job {
+.job {
+    background-image: linear-gradient(to right, rgb(198, 198, 243), rgb(96, 85, 238));
+    border: 2px solid black;
     align-self: center;
+    justify-self: end;
     text-align: end;
+    width: 60%;
     padding: 10px;
 }
 
-.Experience .job_description {
+.job_description {
+    background-image: linear-gradient(to left, rgb(198, 198, 243), rgb(96, 85, 238));
+    border: 2px solid black;
     align-self: center;
+    width: 60%;
+    justify-self: start;
     padding: 10px;
-    padding-right: 40%;
+    padding-right: 20%;
+
 }
 
 /*Panel umiejtnosci*/
 .Skills {
     display: grid;
+    background-image: url("img/pic5.jpg");
+    background-size: cover;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
-    background: orange;
     height: 400px;
     justify-items: center;
     align-items: center;
     padding: 3% 15%;
 }
-/* 
-.ldBar-label {
-    color: blue;
-    font-family: tahoma;
-    font-size: 1.5em;
-    font-weight: 900
-  }
 
-  
-  .ldBar-label:after {
-    content:4;
-    color: red;
-    margin-left: 5px;
-    font-family: courier new;
-    font-size: 0.7em;
-    font-weight: 200;
-  } */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+
 
 
 
 
 /*Panel zainteresowan*/
 .Interests {
+    background-image: url("img/pic4.jpg");
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr;
+    grid-template-rows: 1fr;
     grid-column-gap: 10px;
     justify-items: center;
     align-items: center;
 }
 
-.Interests .volley{
+.volley,
+.literature,
+.coding {
+    position: relative;
     box-sizing: border-box;
-    background: blue;
     padding: 10px;
     width: 80%;
     height: 80%;
     text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
-.Interests .volley> img {
+.Interests img {
     padding: 15px;
     border-radius: 50px;
     width: 70%;
@@ -175,49 +190,17 @@ h3 {
 
 }
 
+.volley:hover,
+.literature:hover,
+.coding:hover {
+    -webkit-transform: scale(1.2) rotate(5deg);
+    -ms-transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
 
-.Interests .coding{
-    box-sizing: border-box;
-    background: grey;
-    padding: 10px;
-    width: 80%;
-    height: 80%;
-    text-align: center;
-}
-
-.Interests .coding> img {
-    padding: 15px;
-    border-radius: 50px;
-    width: 70%;
-    height: 90%;
-}
-
-
-.Interests .literature{
-    box-sizing: border-box;
-    background: peru;
-    padding: 10px;
-    width: 80%;
-    height: 80%;
-    text-align: center;
-}
-
-.Interests .literature> img {
-    padding: 15px;
-    border-radius: 50px;
-    width: 70%;
-    height: 90%;
-}
-
-.Interests p{
-    size: 30px;
-    background: yellow;
-    color: blue;
-    
 }
 
 /*Panel kontaktowy*/
 .Contact {
-    background: white;
+    text-align: center;
+    font-size: 25px;
 }
-
