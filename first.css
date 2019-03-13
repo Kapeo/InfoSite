@@ -1,0 +1,113 @@
+/* NavBar */
+.NavBar {
+    background-color: gray;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+/*Elementy NavBar*/
+.NavBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.NavBar a:hover {
+    background-color: rgb(29, 17, 17);
+}
+
+
+.Container {
+    display:grid;
+    background: red;
+    margin-top: 46px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2f 1f 2fr 1fr;
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: blue;
+    height: 500px;
+}
+
+.Info .photo{
+    background: red;
+    box-flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+
+}
+
+
+.Info .photo > img {
+    padding: 15px;
+    border-radius: 50px;
+    width: 70%;
+    height: 90%;
+}
+
+.Info .informations {
+    background: olive;
+    width: 35%;
+    height: auto;
+    box-flex: 2;
+    padding: 10px;
+    align-self: center;
+    text-align: flex-start;
+    
+    
+}
+
+.Info .informations p{
+    color: pink;
+    
+}
+
+
+.Introduction {
+    border: 5px solid black;
+    padding: 10px;
+    text-align: center;
+    background: purple;
+}
+
+.Experience {
+    background: yellow;
+}
+
+.Education {
+    background: navy;
+}
+
+.Skills {
+    background: orange;
+}
+
+.Projects {
+    background: green;
+}
+
+.Contact {
+    background: white;
+}
+
+.Introdution {
+    background: purple;
+}
